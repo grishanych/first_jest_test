@@ -13,7 +13,7 @@ for(i = 1, s = 0; i <= n; i++) {
  }
  return(s)
 }
-console.log(findSum(2));
+console.log(findSum(0));
 
 
 // 2)_____178__'г'_____даны натуральные числа n, a1...an определить количество членов ak послідовності a1........an, задовольняючи умову 
@@ -24,10 +24,10 @@ console.log(findSum(2));
 function findResult (k) {
     let result = 0;
     for(let i = 1; i <= k; i++){
-    if (i < ((i - 1 + i + 1) / 2)){
+    if (i  < ((i - 1 + i + 1) / 2)){
         result++;
     }
     }
     return result;
 }
-console.log(findResult(150));
+console.log(findResult(5));
