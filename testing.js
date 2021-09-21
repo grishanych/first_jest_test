@@ -17,7 +17,7 @@ console.log(findSum(2));
 
 
 // 2)_____178__'г'_____даны натуральные числа n, a1...an определить количество членов ak послідовності a1........an, задовольняючи умову 
-//      (a(k-1) + a (k+1)) 
+//            (a(k-1) + a (k+1)) 
 //     ak <  ------------------
 //                   2
 
@@ -30,4 +30,4 @@ function findResult(k) {
     }
     return result;
 }
-console.log(findResult([5,6,7,9,2,6]));
+console.log(findResult([4,5,8,4]));

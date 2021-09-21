@@ -31,12 +31,12 @@ describe ('Find Sum function:', () => {
 
 describe ('Find result function:' , () => {
    
-    test('should return 15 if k = [34, 34, 2, 3, 96, 11, 12, 95, 38, 14, 99, 69, 77, 14, 77, 11, 68, 31, 76, 24, 99, 45, 10, 36, 66, 9, 9, 9, 5, 0]', () => {
-        expect(findResult([34, 34, 2, 3, 96, 11, 12, 95, 38, 14, 99, 69, 77, 14, 77, 11, 68, 31, 76, 24, 99, 45, 10, 36, 66, 9, 9, 9, 5, 0])).toEqual(15);
+    test('should return 3 if k = [4,5,8,4]', () => {
+        expect(findResult([4,5,8,4])).toEqual(1);
     }); 
 
-    test('should return 15 if k = [34, 34, 2, 3, 96, 11, 12, 95, 38, 14, 99, 69, 77, 14, 77, 11, 68, 31, 76, 24, 99, 45, 10, 36, 66, 9, 9, 9, 5, 0]', () => {
-        expect(findResult([ 5,6,7,9,2,6])).toEqual(2);
+    test('should return 4 if k = [2,4,9,7,3,6,4,5,8]', () => {
+        expect(findResult([2,4,9,7,3,6,4,5,8])).toEqual(4);
     }); 
 
     test('should be falsy if k = [0],', () => {
@@ -44,15 +44,15 @@ describe ('Find result function:' , () => {
     }); 
 
     test('should be defined', () => {
-        expect(findResult([34, 34, 2, 3, 96, 11])).toBeDefined();
+        expect(findResult([2,4,9,7,3,6,4,5,8])).toBeDefined();
     }); 
 
     test('shouldn\'t be undefined', () => {
-        expect(findResult([34, 34, 2, 3, 96, 11, 12, 95, 38, 14, 99, 69, 77, 14, 77, 11, 68, 31, 76, 24, 99, 45, 10, 36, 66, 9, 9, 9, 5, 0])).not.toBeUndefined();
+        expect(findResult([2,4,9,7,3,6,4,5,8])).not.toBeUndefined();
     }); 
 
     test('shouldn\'t be null', () => {
-        expect(findResult([34, 34, 2, 3, 96, 11, 12, 95, 38, 14, 99, 69, 77, 14, 77, 11, 68, 31, 76, 24, 99, 45, 10, 36, 66, 9, 9, 9, 5, 0])).not.toBeNull();
+        expect(findResult([2,4,9,7,3,6,4,5,8])).not.toBeNull();
     });
 
     test('should return 0 if k = [0]', () => {
